@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frist Project</title>
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        ul li {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: all .3s ease;
+
+        }
+
+        li:hover {
+            opacity: 1;
+        }
+
+        .active {
+            opacity: 1;
+        }
+
+        .EXP {
+            background-color: red;
+            width: 413px;
+            height: 250px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li title="red" class="active" data-color="red" style="background-color: red;"></li>
+        <li data-color="green" style="background-color: green;"></li>
+        <li data-color="blue" style="background-color: blue;"></li>
+        <li data-color="black" style="background-color: black;"></li>
+    </ul>
+    <div class="EXP">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
